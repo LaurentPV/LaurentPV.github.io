@@ -21,7 +21,7 @@
                      <strong>Les Liens Hypertextes</strong><p></p>
                      <p>Ces liens sont au coeur du fonctionnement du language HTML dans l'édition de documents à lecture non linéaire.</p>
                      <ol>
-                     <section id="txt"><li>Les balises de lien</li></section>
+                     <section id="link"><li>Comment insérer des liens HTML</li></section>
 
                        <table>
                          <thead>
@@ -31,37 +31,66 @@
                            <th></th>
                          </tfoot>
                          <tr>
-                             <td>>&ltp&gt :</td>
-                             <td>Balise encadrant un paragraphe de texte. La fermeture de cette balise provoque un retour à la ligne.</td>
+                             <td><strong>Syntaxe</strong></td>
+                             <td><strong>Description</strong></td>
                          </tr>
                          <tr>
-                             <td>&ltem&gt :</td>
-                             <td> Mise en italique.</td>
+                             <td>&lta href="adresse_du_lien"&gtlien_hypertexte&lt/a&gt : </td>
+                             <td>Balise &lta.../a&gt comprenant la source du lien entre "" et introduit par l'attribut href= suivi du lien entre chevrons &gt puis &lt.</td>
                          </tr>
                          <tr>
-                             <td>&ltstrong&gt :</td>
-                             <td>Mise en gras.</td>
+                             <td>&ltsection id="identifiant_du_lien"&gt : </td>
+                             <td>Ajout d'un attribut id="" à une balise (ici section). Les valeurs associées à l'attribut id= doivent être unique au sein du document HTML.</td>
                          </tr>
                          <tr>
-                             <td>&ltmark&gt :</td>
-                             <td>Mise en valeur visuelle.</td>
+                             <td>&lta href="#identifiant_du_lien"&gtlien_hypertexte&lt/a&gt : </td>
+                             <td>La balise &lta.../a&gt permet l'insertion du lien "lien_hypertexte" renvoyant vers l'attribut #identifiant_du_lien situé sur la même page.</td>
                          </tr>
                          <tr>
-                             <td>&lth1&gt à &lth6&gt : </td>
-                             <td>Titres de niveau décroissant.</td>
+                             <td>..."page7.html#identifiant_du_lien" : </td>
+                             <td>Exemple d'identifiant du lien si l'attribut est sur une autre page.</td>
+                         </tr>
+                         <tr>
+                             <td>&ltimg src="adresse_de_l_image" alt="message"&gt : </td>
+                             <td>Lien permettant l'affichage d'une image ou d'un message spécifique lorsque cet affichage n'est pas possible.</td>
                          </tr>
                        </table>
 
-              <section id="lis"><li>Les Listes </li></section>
+              <section id="tar"><li>L'Attribut Target' </li></section>
+              <p>L'attribut TARGET permet en lieu et place de HREF de moduler l'affichage du lien hypertexte.
 
-                  <ul>
-                    <li>&ltli&gt : Sélectionne les éléments à lister.</li>
-                    <li>&ltul&gt : Ordonne les éléments les uns au dessus des autres, il s'agit d'une liste désordonnée.</li>
-                    <li>&ltol&gt : Numérote les éléments, il s'agit d'une liste ordonnées (ex. les chapitres de cette page).</li>
-                    <li>&ltdd&gt : Ecartement à la marge de type début de chapitre.</li>
-                    <li>&ltdl&gt : Liste de définitions</li>
-                    <li>&ltdt&gt : terme à définir</li>
-                    <li>&ltdd&gt : Définition du terme</li></ul><p></p>
+              <table>
+                <thead>
+                  <th></th>
+                </thead>
+                <tfoot>
+                  <th></th>
+                </tfoot>
+                <tr>
+                    <td><strong>Syntaxe</strong></td>
+                    <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                    <td>target="_blank" : </td>
+                    <td>Affiche le lien dans une autre fenêtre du navigateur.</td>
+                </tr>
+                <tr>
+                    <td>target="_top" : </td>
+                    <td>Affiche le lien dans la totalité de la fenêtre courante.</td>
+                </tr>
+                <tr>
+                    <td>target="_parent" : </td>
+                    <td>Affichage dans le cadre de la structure courante.</td>
+                </tr>
+                <tr>
+                    <td>target="_self" : </td>
+                    <td>Affichage par défaut, dans le cadre courant.</td>
+                </tr>
+                <tr>
+                    <td>target="_<em>nomducadre<em>" : </td>
+                    <td>Affichage dans un cadre spécifié.</td>
+                </tr>
+              </table>
 
               <section id="echap"><li>L'échappement</li></section>
 
@@ -75,8 +104,8 @@
 
   <aside>
       <ul>
-          <li><p><a href="#txt" >Le Texte</a></p></li>
-          <li><p><a href="#lis" >Les Listes</a></p></li>
+          <li><p><a href="#link" >Comment insérer des liens HTML</a></p></li>
+          <li><p><a href="#tar" >L'Attribut TARGET</a></p></li>
           <li><p><a href="#echap" >L'échappement</a></p></li>
   </aside>
 

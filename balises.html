@@ -24,12 +24,7 @@
                      <section id="txt"><li>Le Texte</li></section>
 
                        <table>
-                         <thead>
-                           <th></th>
-                         </thead>
-                         <tfoot>
-                           <th></th>
-                         </tfoot>
+
                          <tr>
                              <td>&ltp&gt :</td>
                              <td>Balise encadrant un paragraphe de texte. La fermeture de cette balise provoque un retour à la ligne.</td>
@@ -55,14 +50,9 @@
               <section id="lis"><li>Les Listes </li></section>
 
               <table>
-                <thead>
-                  <th></th>
-                </thead>
-                <tfoot>
-                  <th></th>
-                </tfoot>
+
                 <tr>
-                    <td><li>&ltli&gt :</td>
+                    <td>&ltli&gt :</td>
                     <td>Sélectionne les éléments à lister.</td>
                 </tr>
                 <tr>
@@ -90,14 +80,9 @@
               <section id="echap"><li>L'échappement</li></section>
 
               <table>
-                <thead>
-                  <th></th>
-                </thead>
-                <tfoot>
-                  <th></th>
-                </tfoot>
+
                 <tr>
-                    <td><li>"<" :</td>
+                    <td>"<" :</td>
                     <td>s'écrit lorsqu'il s'agit de texte :&amplt (lt pour Lesser Than)</td>
                 </tr>
                 <tr>
@@ -121,8 +106,32 @@
                     trouvera au sein du code entre ces balises.</li>
                   <li>Chaque ligne du tableau est de la même façon illustrée par les balises &lttr&gt et &lt/tr&gt.</li>
                   <li>Un tableau peut comporter une en-tête et un footer dont les balises seront &ltthead&gt et &ltfooter&gt. Chaque élément au sein de ces balises
-                     sera placé entre les sous-balises &ltth&gt et &l/th&gt.
-                  <li>
+                     sera placé entre les sous-balises &ltth&gt et &lt/th&gt.</li>
+                  <p>Exemple de code pour un tableau présentant les caractères "A" et "B" sur la première ligne et "B" et "C" sur la seconde avec header et Footer :</p>
+                  <pre>
+                       &lttable&gt
+                         &ltthead&gt
+                           &ltth&gttexte_du_header&lt/th&gt
+                           &ltth&gtsuite_du_blabla&lt/th&gt
+                         &lt/thead&gt
+                         &ltfooter&gt
+                            &ltth&gtexemple_de_footer&lt/th&gt
+                         &lt/footer&gt
+                       &lttr&gt
+                         &lttd&gtA&lt/td&gt
+                         &lttd&gtB&lt/td&gt
+                       &lt/tr&gt
+                       &lttr&gt
+                         &lttd&gtC&lt/td&gt
+                         &lttd&gtD&lt/td&gt
+                       &lt/tr&gt
+                       &lt/table&gt</pre>
+                  <ul>
+                  <li>La balise &ltcaption&gt se place juste après &lttable&gt et permet d'insérer une légende au tableau.</li>
+                  <li>La balise &ltcolgroup&gt se place après &ltcaption&gt lorsqu'il est présent, sinon après &lttable&gt et sert à définir les colonnes du tableau.</li>
+                  <li>ROSPAN et COLSPAN permettent de faire fusionner plusieurs cases; dans le sens des lignes (ROws) ou des colonnes (COlumns). ex: &lttd rospan="2"&gt afin de
+                    faire fusionner deux cellules d'une ligne.</li>
+                  </ul>
 
             </ol>
         </section>
