@@ -26,37 +26,54 @@
      </section>
           <ol>
               <section id="struc"><li>La Structure de Base</li></section>
-                  <ul>
-                      <li>&lt!DOCTYPE html&gt : Le Doctype</li>
-                      <p>La toute première ligne du code. Elle signale qu'il s'agit bien d'une page Web HTML.</p><p></p>
-                      <li>&lthtml&gt : La Balise principale </li>
-                      <p>Elle contient l'ensemble du contenu de la page. Le code HTML doit en effet se conclure par
-                      &lt/html&gt</p><p></p>
+              <table>
+                <thead>
+                  <th></th>
+                </thead>
+                <tfoot>
+                  <th></th>
+                </tfoot>
+                <tr>
+                    <td><strong>Syntaxe</strong></td>
+                    <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                    <td>&lt!DOCTYPE html&gt : </td>
+                    <td>Le DOCTYPE. La première ligne du code qui signale qu'il s'agit bien d'une page WEB HTML.</td>
+                </tr>
+                <tr>
+                    <td>&lthtml&gt : </td>
+                    <td>La Balise principale. Elle contient l'ensemble du contenu de la page. Le code HTML doit en effet se conclure par
+                    &lt/html&gt.</td>
+                </tr>
+                <tr>
+                    <td>&lthead&gt : </td>
+                    <td>L'En-tête de la page. La première des deux parties constituant une page Web. Les informations contenues dans cette partie du code ne sont pas affichées mais
+                       destinées à une correcte interprétation de la page Web par l'ordinateur.</td>
+                     </tr>
+                   </table>
+                       <ul>
+                         <li>&ltmeta charset="utf-8" /&gt : L'encodage. Cette balise &ltmeta pour metadonnées spécifie entre autres choses l'encodage (ou charset) des caractères utilisé
+                      dans notre fichier HTML.</li>
+                      <p>Cet encodage spécifie à l'ordinateur à quoi fait spécifiquement référence
+                        chaque caractère tapé par l'utilisateur. Une page Web doit pouvoir potentiellement
+                        afficher tous les caractères typographiques existant et l'encodage permet cela.
+                      Les deux types d'encodage les plus utilisés en occident sont l'utf-8 et l'utf-16.</p>
+                        <li>&lttitle&gt : Le Titre de la page. Cette balise stipule le titre de notre page Web, ce titre s'affichera dans l'onglet du navigateur.</li>
+                        <li>&ltlink/&gt : Liaison avec une feuille de style.</li>
+                        <li>&ltscript&gt : Code JavaScript.</li>
+                        <li>&ltstyle&gt : Code CSS.</li>
+                       </ul>
 
-                      <li>&lthead&gt : L'En-tête de la page </li>
-                      <p>La première des deux parties constituant une page Web.</p>
-                      <p>Les informations contenues dans cette partie du code ne sont pas affichées mais
-                         destinées à une correcte interprétation de la page Web par l'ordinateur.
-
-                         <ol>
-                             <li>&ltmeta charset="utf-8" /&gt : L'encodage</li>
-                             <p>Cette balise &ltmeta pour metadonnées spécifie entre autres choses l'encodage (ou charset) des caractères utilisé
-                               dans notre fichier HTML.</p>
-                             <p>Cet encodage spécifie à l'ordinateur à quoi fait spécifiquement référence
-                               chaque caractère tapé par l'utilisateur. Une page Web doit pouvoir potentiellement
-                               afficher tous les caractères typographiques existant et l'encodage permet cela.</p>
-                             <p>Les deux types d'encodage les plus utilisés en occident sont l'utf-8 et l'utf-16.</p>
-                             <li>&lttitle&gt : Le Titre de la page</li>
-                             <p>Cette balise stipule le titre de notre page Web, ce titre s'affichera dans l'onglet du navigateur.</p>
-                             <li>&ltlink/&gt : Liaison avec une feuille de style </li>
-                             <li>&ltscript&gt : Code JavaScript </li>
-                             <li>&ltstyle&gt : Code CSS</li>
-                         </ol><p></p>
-
-                      <li>&ltbody&gt : Le Corps de la page</li>
+                      <table>
+                        <tr>
+                          <td>&ltbody&gt : </td>
+                          <td>Le Corps de la page</td>
+                        </tr>
+                      </table>
                       <p>La seconde partie constituant une page Web. Elle contient l'ensemble des informations visibles sur la page et
                         organisées par <a href="https://laurentpv.github.io/balises.html">les balises de mise en page sémantique</a>.</p><p></p>
-                    </ul>
+
 
              <section id="mini"><li>Exemple de Code Minimal</li></section><p></p>
                 <pre>&lt!DOCTYPE html&gt
