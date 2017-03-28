@@ -2,6 +2,7 @@
 <html>
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Initiation à HTML & CSS</title>
   </head>
   <body>
     <header>
@@ -16,52 +17,69 @@
       </ol>
 
       <section>
-          <strong>Introduction</strong><p></p>
-    <p>HTML (Hypertext Markup Language) est un language crée en 1991 et fonctionnant sur un système
-      de balisage afin de coder la structure et le contenu d'une page web. CSS (Cascading Style Sheets)
-      est un language complémentaire fonctionnant sur un système de "feuilles de style" et permettant une
-      gestion dissociée de l'affichage de la page web.</p>
-    <p>L'association de HTML et de CSS permet une grande maniabilité dans le domaine du développement web
-        en permettant la modification du contenu sans affecter l'affichage et vice versa.</p>
+          <strong>La Base d'un document HTML</strong><p></p>
+    <p>Chaque code HTML identifie le contenu de la page WEB à afficher ainsi que les informations concernant
+      l'organisation sémantique de ce contenu via des balises.</p>
+    <p>Ces balises représentées par un code spécifique placé entre chevrons (ex: &ltsection&gt pour l'ouverture d'une section
+      et avec ajout d'un "/" avant l'intitulé ex: &lt/section&gt pour sa fermeture) encadrent chaque ligne du code HTML.</p>
+     </section>
+          <ol>
+              <section id="struc"><li>La Structure de Base</li></section>
+                  <ul>
+                      <li>&lt!DOCTYPE html&gt : Le Doctype</li>
+                      <p>La toute première ligne du code. Elle signale qu'il s'agit bien d'une page Web HTML.</p><p></p>
+                      <li>&lthtml&gt : La Balise principale </li>
+                      <p>Elle contient l'ensemble du contenu de la page. Le code HTML doit en effet se conclure par
+                      &lt/html&gt</p><p></p>
+
+                      <li>&lthead&gt : L'En-tête de la page </li>
+                      <p>La première des deux parties constituant une page Web.</p>
+                      <p>Les informations contenues dans cette partie du code ne sont pas affichées mais
+                         destinées à une correcte interprétation de la page Web par l'ordinateur.
+
+                         <ol>
+                             <li>&ltmeta charset="utf-8" /&gt : L'encodage</li>
+                             <p>Cette balise &ltmeta pour metadonnées spécifie entre autres choses l'encodage (ou charset) des caractères utilisé
+                               dans notre fichier HTML.</p>
+                             <p>Cet encodage spécifie à l'ordinateur à quoi fait spécifiquement référence
+                               chaque caractère tapé par l'utilisateur. Une page Web doit pouvoir potentiellement
+                               afficher tous les caractères typographiques existant et l'encodage permet cela.</p>
+                             <p>Les deux types d'encodage les plus utilisés en occident sont l'utf-8 et l'utf-16.</p>
+                             <li>&lttitle&gt : Le Titre de la page</li>
+                             <p>Cette balise stipule le titre de notre page Web, ce titre s'affichera dans l'onglet du navigateur.</p>
+                             <li>&ltlink/&gt : Liaison avec une feuille de style </li>
+                             <li>&ltscript&gt : Code JavaScript </li>
+                             <li>&ltstyle&gt : Code CSS</li>
+                         </ol><p></p>
+
+                      <li>&ltbody&gt : Le Corps de la page</li>
+                      <p>La seconde partie constituant une page Web. Elle contient l'ensemble des informations visibles sur la page et
+                        organisées par <a href="https://laurentpv.github.io/balises.html">les balises de mise en page sémantique</a>.</p><p></p>
+                    </ul>
+
+             <section id="mini"><li>Exemple de Code Minimal</li></section><p></p>
+                <pre><p>&lt!DOCTYPE html&gt</p>
+                <p>&lthtml&gt</p>
+                <p>  &lthead&gt&ltmeta charset="utf-8" /&gt</p>
+                <p>    &lttitle&gtLe titre de la page&lt/title&gt</p>
+                <p>  &lt/head&gt</p>
+                <p>  &ltbody&gt </p>
+                <p>     ….......... …..........</p>
+                <p>  &lt/body&gt</p>
+                <p>&lt/html&gt</p></pre>
+                <p></p>
+            </ol>
+
       </section>
 
-    <ul><li>&lthtml&gt : Balise principale </li>
-    <li>&lthead&gt : En tête de la page </li>
-    <li>&ltbody&gt : Corps de la page</li></ul><p></p>
-    <li>En tête entre les balises &lt head &gt et &lt /head &gt </li>
-    <ul><li>&ltlink/&gt : Liaison avec une feuille de style </li>
-    <li>&ltmeta/&gt : Metadonnées de la page web (charset, mots clefs, ...etc) </li>
-    <li>&ltscript&gt : Code JavaScript </li>
-    <li>&lttitle&gt : Titre de la page </li>
-    <li>&ltstyle&gt : Code CSS</li></ul>
 
-    <p>Le texte dans la norme HTML doit être mis dans une balise spécifique, la balise &ltp&gt exempledetexte &lt/p&gt <p></p>
-    Pour retourner à la ligne, refaire un paragraphe, on réutilise les balises &ltp&gt exempledetexte &lt/p&gt <p></p>
+      <aside>
+          <ul>
+              <li><p><a href="#struc" >La Structure de Base</a></p></li>
+              <li><p><a href="#mini" >Exemple de Code Minimal</a></p></li>
+      </aside>
 
-    <li>Exemple de code minimal HTML </li>
-    <ul><li>&lt!DOCTYPE html&gt</li>
-          <li>  &lthead&gt &ltmeta charset="utf-8" /&gt</li>
-          <li>&lttitle&gtLe titre de la page&lt/title&gt</li>
-          <li>&lt/head&gt</li>
-          <li>&ltbody&gt ….......... …..........</li>
-          <li>&lt/body&gt</li>
-          <li>&lt/html&gt</li></ul>
-          <p></p>
-          <p>Ici le jeu de caractère (charset) <strong>utf-8</strong> a été choisi.
-            Il s'agit d'un jeu de caractères standard couremment utilisé.</p><p></p>
-      <li>Les Listes </li>
-      <ul><li>&ltli&gt : Sélectionne les éléments à lister.</li>
-        <li>&ltul&gt : Ordonne les éléments les uns au dessus des autres, il s'agit d'une liste désordonnée.</li>
-        <li>&ltol&gt : Numérote les éléments, il s'agit d'une liste ordonnées (ex. les chapitres de cette page).</li>
-        <li>&ltdd&gt : Ecartement à la marge de type début de chapitre.</li>
-      <li>&ltdl&gt : Liste de définitions</li>
-      <li>&ltdt&gt : terme à définir</li>
-      <li>&ltdd&gt : Définition du terme</li></ul><p></p>
-      <li>L'échappement</li>
-      <ul><li> "<" s'écrit lorsqu'il s'agit de texte :&amplt (pour Lesser Than)</li>
-        <li>">" s'écrit lorsqu'il s'agit de texte : &ampgt (pour Greater Than)</li>
-        <li>"&amp" s'écrit : &ampamp</li><ul><p></p>
-<p>Voir <a href="https://laurentpv.github.io/chevreuil.html" >ce lien</a></p>
+<p><a href="index.html#intro" >Retour</a></p>
 
   </body>
 <html/>
