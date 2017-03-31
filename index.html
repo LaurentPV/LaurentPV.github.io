@@ -2,53 +2,446 @@
 <html>
   <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-   <title>Initiation à HTML & CSS</title>
+   <title>Initiation à HTML &amp; CSS</title>
    <link rel="stylesheet" type="text/css" href="reset.css"/>
    <link rel="stylesheet" type="text/css" href="style.css"/>
+   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+   <script type="text/javascript" src="functions.js"></script>
   </head>
   <body>
-   <div class="head">
+  <div class="fix">
     <header>
-        <p><h1>Initiation aux languages HTML 5 & CSS 3</h1></p>
+      <div id="titre">
+        <h1><a href="#mots" >Initiation aux languages HTML 5 &amp; CSS 3</a></h1>
+      </div>
+            <img id="logo" src="logo.png" alt="tristesse"> 
     </header>
-   </div>
-  
-    <nav>
-      <dl>
-          <div class="som">
-            <dt>Sommaire</dt>
-              <dd><a href="base.html" >Base du Document HTML</a></dd>
-              <dd><a href="balises.html" >Les Balises</a></dd>
-              <dd><a href="structure.html">La Structure d'une Page</a></dd>
-              <dd><a href="liens.html">Les liens Hypertextes</a></dd>
-          </div>
-  
-     <!-- <ol>
-          <li><a href="index.html" >Introduc  tion</a></li>
-          <li><a href="base.html" >Base du Document HTML</a></li>
-          <li><a href="balises.html" >Les Balises</a></li>
-          <li><a href="structure.html">La Structure d'une page</a></li>
-          <li><a href="liens.html">Les liens Hypertextes</a></li>
-      </ol> -->
-    </nav>
-   <div class="blabla">
-      <section id="intro">
-          <strong>Introduction</strong><p></p>
-    <p>HTML (Hypertext Markup Language) est un language crée en 1991 et fonctionnant sur un système
-      de balisage afin de coder la structure et le contenu d'une page web. CSS (Cascading Style Sheets)
-      est un language complémentaire fonctionnant sur un système de "feuilles de style" et permettant une
-      gestion dissociée de l'affichage de la page web.</p>
-    <p>L'association de HTML et de CSS permet une grande maniabilité dans le domaine du développement web
-        en permettant la modification du contenu sans affecter l'affichage et vice versa.</p>
-       </section>
-     </div>
+<div id="bando">
+</div>
 
-      <footer>
-           <div class="pied">
-          <p><a href="https://laurentpv.github.io/chevreuil.html" >Retour</a></p>
-          Copyright Edouard, all rights reserved.
-                </div>
-      </footer>
+    <div id="menu">
+  <div class="menu" id="menu1" onclick="afficheMenu(this)">
+    <a href="#">HTML</a>
+  </div>
+  <div id="sousmenu1" style="display:none">
+    <div class="sousmenu">
+      <a href="#">Introduction</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#base">Base du Document Html</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#balises">Les Balises</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#struct">La Structure d'une Page</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">Les Liens Hypertextes</a>
+    </div>
+  </div>
+  
+  <div class="menu" id="menu2" onclick="afficheMenu(this)">
+    <a href="#">CSS</a>
+  </div>
+  <div id="sousmenu2" style="display:none">
+    <div class="sousmenu">
+      <a href="#">Les Boites</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">Les Classes</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">La Position</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">Flexbox</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">Les Pseudo-Classes</a>
+    </div>
+    <div class="sousmenu">
+      <a href="#">Les Formulaires</a>
+    </div>
+  </div>
+
+  <div class="menu" id="menu4" onclick="afficheMenu(this)">
+    <a href="#">RESSOURCES</a>
+  </div>
+  <div id="sousmenu4" style="display:none">
+    <div class="sousmenu">
+      <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">MDN-HTML</a>
+    </div>
+    <div class="sousmenu">
+      <a href="https://developer.mozilla.org/fr/Apprendre/Commencer_avec_le_web/Les_bases_CSS" target="_blank">MDN-CSS</a>
+    </div>
+    <div class="sousmenu">
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Flexbox</a>
+    </div>
+    <div class="sousmenu">
+      <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/comment-fait-on-pour-creer-des-sites-web" target="_blank">Open-Classroom</a>
+    </div>
+    <div class="sousmenu">
+      <a href="https://validator.w3.org/" target="_blank">Validator</a>
+    </div>
+     <div class="sousmenu">
+      <a href="https://cocoware.github.io/" target="_blank">Cocoware</a>
+    </div>
+  </div>
+</div>
+</div>
+
+      <section class="corps">
+        <div class="blabla" id="mots">
+          <p>INTRODUCTION</br></br>
+              HTML (Hypertext Markup Language) est un language crée en 1991 et fonctionnant sur un système de balisage afin de coder la structure et le contenu d'une page web. CSS (Cascading Style Sheets) est un language complémentaire fonctionnant sur un système de "feuilles de style" et permettant une gestion dissociée de l'affichage de la page web. L'association de HTML et de CSS permet une grande maniabilité dans le domaine du développement web
+              en permettant la modification du contenu sans affecter l'affichage et vice versa.</p></br>
+               
+        <div id="bando"></div></br>
+        <div id="base"></br></br></br></br></br>
+          <p>LA BASE DU DOCUMENT HTML</p></br></br>
+             <p>Chaque code HTML identifie le contenu de la page WEB à afficher ainsi que les informations concernant
+             l'organisation sémantique de ce contenu via des balises.</p>
+             <p>Ces balises représentées par un code spécifique placé entre chevrons (ex: &lt;section&gt; pour l'ouverture d'une section
+             et avec ajout d'un "/" avant l'intitulé ex: &lt;/section&gt; pour sa fermeture) encadrent chaque ligne du code HTML.</p></br></br>
+        </div>
+        <div id="struc"><p>Le Code</p></br>
+                     
+                <div id="bando"></div>
+                  <table>
+                    <tr>
+                      <td><strong>Syntaxe :</strong></td>
+                      <td><strong>Description :</strong></td>
+                    </tr>
+                  </table>
+                <div id="bando"></div>
+                <table>
+                  <tr>
+                    <td>&lt;!DOCTYPE html&gt; : </td>
+                    <td>Le DOCTYPE. La première ligne du code qui signale qu'il s'agit bien d'une page WEB HTML.</td>
+                  <tr>
+                    <td>&lt;html&gt; : </td>
+                    <td>La Balise principale. Elle contient l'ensemble du contenu de la page. Le code HTML doit en effet se conclure par
+                    &lt;/html&gt;.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;head&gt; : </td>
+                    <td>L'En-tête de la page. La première des deux parties constituant une page Web. Les informations contenues dans cette partie du code ne sont pas affichées mais
+                       destinées à une correcte interprétation de la page Web par l'ordinateur.</td>
+                     </tr>
+                   </table>
+                   <div id="bando"></div>
+                   </br>
+      </div>
+
+      <div id="mini"><p>Exemple de Code Minimal :</p></br>
+        <pre id="code">
+          <code>&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;&lt;meta charset="utf-8" /&gt;
+                    &lt;title&gt;Le titre de la page&lt;/title&gt;
+                  &lt;/head&gt;
+                    &lt;body&gt;
+                      ….......... …..........
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                  </code></pre>
+               </br></br>
+      </div>
+
+<div id="bando"></div>
+                <table>
+                  <tr>
+                    <td>&lt;meta charset="utf-8" /&gt; :</td>
+                    <td>L'encodage. Cette balise &lt;meta pour metadonnées spécifie entre autres choses l'encodage (ou charset) des caractères utilisé dans notre fichier HTML.
+                    Cet encodage spécifie à l'ordinateur à quoi fait spécifiquement référence
+                        chaque caractère tapé par l'utilisateur. Une page Web doit pouvoir potentiellement
+                        afficher tous les caractères typographiques existant et l'encodage permet cela.
+                      Les deux types d'encodage les plus utilisés en occident sont l'utf-8 et l'utf-16.</td>
+                  <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Le Titre de la page. Cette balise stipule le titre de notre page Web, ce titre s'affichera dans l'onglet du navigateur.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;link/&gt; : </td>
+                    <td>Liaison avec une feuille de style.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;script&gt; :</td>
+                    <td>Code JavaScript.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;style&gt; :</td>
+                    <td>Code CSS.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;body&gt; : </td>
+                    <td>Le Corps de la page. La seconde partie constituant une page Web. Elle contient l'ensemble des informations visibles sur la page et
+                        organisées par <a href="#balises">les balises de mise en page sémantique</a></td>
+                     </tr>
+                   </table>
+                   <div id="bando"></div>
+                   </br>
+
+       <div id="balises"></br></br></br></br></br>
+       <p>LES BALISES</p></br>
+          <p>Nous allons voir ici les principales balises nous permettant de rédiger l'information au sein de notre page WEB.</p></br>
+                     
+                     <section id="txt"><p>Le Texte</p></section>
+                       <div id="bando"></div>
+                  <table>
+                    <tr>
+                      <td><strong>Syntaxe :</strong></td>
+                      <td><strong>Description :</strong></td>
+                    </tr>
+                  </table>
+                <div id="bando"></div>
+                     <table>
+                         <tr>
+                             <td>&lt;p&gt; : </td>
+                             <td>Balise encadrant un paragraphe de texte. La fermeture de cette balise provoque un retour à la ligne.</td>
+                         </tr>
+                         <tr>
+                             <td>&lt;em&gt; : </td>
+                             <td> Mise en italique.</td>
+                         </tr>
+                         <tr>
+                             <td>&lt;strong&gt; : </td>
+                             <td>Mise en gras.</td>
+                         </tr>
+                         <tr>
+                             <td>&lt;mark&gt; : </td>
+                             <td>Mise en valeur visuelle.</td>
+                         </tr>
+                         <tr>
+                             <td>&lt;h1&gt; à &lt;h6&gt; : </td>
+                             <td>Titres de niveau décroissant.</td>
+                         </tr>
+                       </table>
+                       <div id="bando"></div>
+                   </br></br>
+
+              <section id="lis">Les Listes</section>
+               <div id="bando"></div>
+
+              <table>
+
+                <tr>
+                    <td>&lt;li&gt; : </td>
+                    <td>Sélectionne les éléments à lister.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt; : </td>
+                    <td>Ordonne les éléments les uns au dessus des autres, il s'agit d'une liste désordonnée.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt; : </td>
+                    <td>Numérote les éléments, il s'agit d'une liste ordonnées (ex. les chapitres de cette page).</td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt; : </td>
+                    <td>Liste de définitions.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt; : </td>
+                    <td>Terme à définir.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt; : </td>
+                    <td>Définition du terme.</td>
+                </tr>
+              </table>
+                <div id="bando"></div>
+                   </br></br>
+              <section id="echap"><p>L'échappement</p></section>
+              <div id="bando"></div>
+              <table>
+
+                <tr>
+                    <td>"<" : </td>
+                    <td>s'écrit lorsqu'il s'agit de texte :&amp;lt (lt pour Lesser Than)</td>
+                </tr>
+                <tr>
+                    <td>">" : </td>
+                    <td>s'écrit lorsqu'il s'agit de texte : &amp;gt (gt pour Greater Than)</td>
+                </tr>
+                <tr>
+                    <td>"&amp;" : </td>
+                    <td>s'écrit : &ampamp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;!--texteducommentaire--&gt;</td>
+                    <td>Insertion de commentaire au sein du code.</td>
+                </tr>
+              </table>
+              <div id="bando"></div>
+                   </br></br>
+
+              <section id="tab"><p>Les Tableaux</p></section>
+                <ul>
+                  <li>L'information concernant l'organisation d'un tableau en HTML se trouve entre les balises &lttable&gt et &lt/table&gt.</li>
+                  <li>Chaque cellule (=case) du tableau est identifié par les balises &lttd&gt et &lt/td&gt. L'information à placer au sein de la cellule se
+                    trouvera au sein du code entre ces balises.</li>
+                  <li>Chaque ligne du tableau est de la même façon illustrée par les balises &lttr&gt et &lt/tr&gt.</li>
+                  <li>Un tableau peut comporter une en-tête et un footer dont les balises seront &ltthead&gt et &ltfooter&gt. Chaque élément au sein de ces balises
+                     sera placé entre les sous-balises &ltth&gt et &lt/th&gt.</li>
+                  <p>Exemple de code pour un tableau présentant les caractères "A" et "B" sur la première ligne et "B" et "C" sur la seconde avec header et Footer :</p>
+                  <pre id="code">
+          <code>
+                       &lt;table&gt;
+                         &lt;thead&gt;
+                           &lt;th&gt;texte_du_header&lt;/th&gt;
+                           &lt;th&gt;suite_du_blabla&lt;/th&gt;
+                         &lt;/thead&gt;
+                         &lt;footer&gt;
+                            &lt;th&gt;exemple_de_footer&lt;/th&gt;
+                         &lt;/footer&gt;
+                       &lt;tr&gt;
+                         &lt;td&gt;A&lt;/td&gt;
+                         &lt;td&gt;B&lt;/td&gt;
+                       &lt;/tr&gt;
+                       &lt;tr&gt;
+                         &lt;td&gt;C&lt;/td&gt;
+                         &lt;td&gt;D&lt;/td&gt;
+                       &lt;/tr&gt;
+                       &lt;/table&gt;</code></pre></br>
+
+                  <p>La balise &lt;caption&gt; se place juste après &lt;table&gt; et permet d'insérer une légende au tableau.</p>
+                  <p>La balise &lt;colgroup&gt; se place après &lt;caption&gt; lorsqu'il est présent, sinon après &lttable&gt et sert à définir les colonnes du tableau.</p>
+                  <p>ROSPAN et COLSPAN permettent de faire fusionner plusieurs cases; dans le sens des lignes (ROws) ou des colonnes (COlumns). ex: &lt;td rospan="2"&gt; afin de faire fusionner deux cellules d'une ligne.</p>
+
+          <div id="struct"></br></br></br></br></br>
+            <p>LES BALISES STRUCTURANTES</p></br>
+            <p>Ces balises servent à délimiter des "cadres" au sein de notre page WEB afin de mieux organiser celle ci et son contenu. Grace à ces balises
+            nous pourrons modifier certaines parties de la page sans affecter le reste. Avec l'utilisation de CSS, l'existence de ces balises prendra toute sa valeur.</p></br>
+
+            <center></center><img src="https://laurentpv.github.io/structure.png" alt="tristesse"></center>
+            <p>Illustration des différentes zones définies par les balises structurantes.</p>
+
+            <div id=""><p>Les Balises</p></div></br>
+            <div id="bando"></div>
+                  <table>
+                    <tr>
+                      <td><strong>Syntaxe :</strong></td>
+                      <td><strong>Description :</strong></td>
+                    </tr>
+                  </table>
+                <div id="bando"></div>
+                <table>
+                  <tr>
+                    <td>&lt;header&gt; :</td>
+                    <td>En-Tête de la page.</td>
+                  <tr>
+                    <td>&lt;footer&gt; :</td>
+                    <td>Pied de page.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;nav&gt; :</td>
+                    <td>Liens principaux de navigation.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;section&gt; :</td>
+                    <td>Section de page.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;aside&gt; :</td>
+                    <td>Informations complémentaires.</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;article&gt; :</td>
+                    <td>Article indépendant de la section.</td>
+                     </tr>
+                   </table>
+                   <div id="bando"></div>
+                   </br>
+           
+            <div id="link"></br></br></br></br></br>
+            <p>LES LIENS HYPERTEXTES</p></br>
+                     <p>Ces liens sont au coeur du fonctionnement du language HTML dans l'édition de documents à lecture non linéaire.</p></br>
+                     <div id=""><p>Comment insérer des liens HTML</p></div></br>
+            <div id="bando"></div>
+                  <table>
+                    <tr>
+                      <td><strong>Syntaxe :</strong></td>
+                      <td><strong>Description :</strong></td>
+                    </tr>
+                  </table>
+                <div id="bando"></div>
+                <table>
+                  <tr>
+                    <td>&lt;a href="adresse_du_lien"&gt;lien_hypertexte&lt;/a&gt; : </td>
+                    <td>Balise &lt;a.../a&gt; comprenant la source du lien entre "" et introduit par l'attribut href= suivi du lien entre chevrons &gt; puis &lt;.</td>
+                  <tr>
+                    <td>&lt;section id="identifiant_du_lien"&gt; : </td>
+                    <td>Ajout d'un attribut id="" à une balise (ici section). Les valeurs associées à l'attribut id= doivent être unique au sein du document HTML.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;a href="#identifiant_du_lien"&gt;lien_hypertexte&lt;/a&gt; : </td>
+                    <td>La balise &lt;a.../a&gt; permet l'insertion du lien "lien_hypertexte" renvoyant vers l'attribut #identifiant_du_lien situé sur la même page.</td>
+                     </tr>
+                     <tr>
+                    <td>..."page7.html#identifiant_du_lien" : </td>
+                    <td>Exemple d'identifiant du lien si l'attribut est sur une autre page (ici la page7).</td>
+                     </tr>
+                     <tr>
+                    <td>&lt;img src="adresse_de_l_image" alt="message"&gt; : </td>
+                    <td>Lien permettant l'affichage d'une image ou d'un message spécifique lorsque cet affichage n'est pas possible.</td>
+                     </tr>
+                   </table>
+                   <div id="bando"></div>
+                   </br>
+            
+
+              <section id="tar"><p>L'Attribut TARGET</p></section>
+              <p>L'attribut TARGET permet en lieu et place de HREF de moduler l'affichage du lien hypertexte.
+
+              <table>
+                <thead>
+                  <th></th>
+                </thead>
+                <tfoot>
+                  <th></th>
+                </tfoot>
+                <tr>
+                    <td><strong>Syntaxe</strong></td>
+                    <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                    <td>target="_blank" : </td>
+                    <td>Affiche le lien dans une autre fenêtre du navigateur.</td>
+                </tr>
+                <tr>
+                    <td>target="_top" : </td>
+                    <td>Affiche le lien dans la totalité de la fenêtre courante.</td>
+                </tr>
+                <tr>
+                    <td>target="_parent" : </td>
+                    <td>Affichage dans le cadre de la structure courante.</td>
+                </tr>
+                <tr>
+                    <td>target="_self" : </td>
+                    <td>Affichage par défaut, dans le cadre courant.</td>
+                </tr>
+                <tr>
+                    <td>target="_<em>nomducadre<em>" : </td>
+                    <td>Affichage dans un cadre spécifié.</td>
+                </tr>
+              </table>
+
+              <section id="echap"><li>L'échappement</li></section>
+
+                    <ul><li> "<" s'écrit lorsqu'il s'agit de texte :&amplt (lt pour Lesser Than)</li>
+                    <li>">" s'écrit lorsqu'il s'agit de texte : &ampgt (gt pour Greater Than)</li>
+                    <li>"&amp" s'écrit : &ampamp</li>
+                    <li>Commentaire au sein du code : &lt!--texteducommentaire--&gt</li></ul>
+
+       </div>
+       </section>
+
+           <footer>
+          <p>Webmaster : Edouard | Mentor : Jean-François Jung</p>
+           </footer>
+
 
   </body>
 <html/>
