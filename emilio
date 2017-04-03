@@ -1,0 +1,197 @@
+
+Placer la fonction F12 (inspecteur) dans contenu CSS.
+
+
+
+<h2 id="def">DEFINITION CSS </h2>
+      <dt> CSS </dt>
+      
+      <img src= "element.png" alt="structure padding" />
+      </pre>
+
+
+
+      <h2 id="types"> TYPES DES ELEMENTS </h2>
+      <p> En CSS, il existe deux grandes familles: des éléments de type <strong>block</strong>, et des éléments de style <strong>in-line"</strong></p>
+      <h3>Type bloc</h3>
+      <p> Servent à la mise en page générale de la page en créant des grands rectangles "conteneurs"</p>
+      <h3>Type in-line</h3>
+      <p> Sont juste des conteneurs plus petites avec un comportément spécifique. Ces balises ont des marges externes et internes définies par défaut.</p>
+      
+      <h2 id="flux">LE FLUX</h2>
+      <p>Le flux, c'est l'ordre d'affichage des élèments. Ainsi, le navigateur parcours votre page HTML, récupère les différents éléments, et les affiche dans un certain ordre.</p>
+      <p>Les éléments de type <strong>block</strong> vont s'afficher les uns en dessous des autres, alors aue des éléments de type <strong>in-line</strong> vont s'affiché les </p>
+      <p>uns à la suite des autres.</p>
+
+
+
+      <h2 id="pos">POSITION</h2>
+      <p> La propièté CSS position permet de modifier le comportement d'affichage des blocs.</p>
+      
+
+
+
+      <h2 id="disp">ELEMENTS DISPLAY</h2>
+      <p>La propieté CSS display va nous permettre de modifier le type de nos éléments. Nous trouvons:</p>
+      <p><strong>None</strong>: élément n'est pas affiché.</p>
+      <p><strong>Block</strong>: l'élément est de type block comme un paragraphe.</p>
+      <p><strong>Inline</strong>: l'élément est de type inline.</p>
+      <p><strong>Inline-block</strong>: l'élément est de type inline mais nous redimensionnable comme un block.</p>
+      <p><strong>List-item</strong>: l'élément devient liste à puces.</p>
+
+
+
+      <h2 id="select">SELECTEUR</h2>
+      <p>Le selecteur indique à quoi se rapportent un esemble des propiétés.</p>
+	    <img src= "selectors.png" alt="structure selecteur" />
+      <h3>Selecteur simple</h3>
+      <p>Il désigne les elements correspondant à une balise.</p>
+      <h3>Selecteur groupes</h3>
+      <p>Un groupe est composé de plusieurs balises séparées par des virgules. Il désigne tous les éléments correspondant à l'une des balises énumérées.</p>
+      <h3>Selecteur père-fils</h3>
+      <p>Une série des balises séparées par le signe &lt; désigne les éléments qui sont enfant directs d'un autre élément.</p>
+      <h3>Eléments consecutifs</h3>
+      <p>Une série des balises séparées par un + désigne les éléments qui suivent directement un autre éléments en ayant les même parent. Les deux éléments</p>
+      <p>successifs peuvent être sur la même balise comme dans autre.</p>
+      <h3>Selecteur par ID</h3>
+      <p>L'attribut ID peut être utilisé comme sélecteur. En principe l'ID est unique sur chaque page, ce aui signifie aue les règles ayant un ID comme sélecteur</p>
+      <p>ne s'appliqueront que sur un seul élément de chaque page.</p>
+      <h3>L'etoile</h3>
+      <p>Le selecteur étoile (*) désigne tous les éléments. Le selecteur est géneralement utilisé pour initiliaser une propiete commune à tous les éléments de la page</p>
+      <p>comme la police par exemple.</p>
+
+
+
+      <h2 id="propi">PROPRIETES</h2>
+      <p> Les proprietés vont définir les éléments. Je vais citer seulement certains entre eux.</p>
+	    <img src= "proprietes.png" alt="structure proprietes" />
+      <h3>Font-family</h3>
+      <p>Elle définit la police de caractère utilisé. Lors du chargement de la page le navigateur cherche sur votre ordinateur la police déclarée</p>
+      <h3>Font-family</h3>
+      <p>Elle définit la police de caractère utilisé. Lors du chargement de la page le navigateur cherche sur votre ordinateur la police déclarée</p>
+      <h3>Font-size</h3>
+      <p>Elle définit la taille de la police de caractère. Elle prend comme paramètre un nombre et une unité que répresenteront une taille. Elle s'exprime en %,em ou px</p>
+      <h3>Font-weight</h3>
+      <p>Elle définit l'épaisseur de la police. 4 posibilités: bold, bolder, lighter et normal</p>
+      <h3>Text-align</h3>
+      <p>Elle définit l'alignement du texte dans son conteneurs</p>
+      <h3>Color</h3>
+      <p>Cette proprièté definit la couleur du texte. Pour indiquer celle-ci, trois méthodes aux choix: le nom complet, en anglais, mais n'est pas possible que pour les couleurs base</p>
+      <p>, le code hexadecimal du type #91c225 ou le code RGB rgb(145,194,37)</p>
+	    <img src= "explication.gif" alt="explication couleurs gif" />
+      <h3>Background-color</h3>
+      <p>Cette propièté permet d'attribuer un couleur de fond à un élément texte, div, table. L'indicateur de couleur se fait de la même façon que pour les propiétés FONT.</p>
+      <h3>Width et Height</h3>
+      <p>Ces propiétés utilisés pour attribuer des valeurs de largeurs et hauter à un élément. S'il elle permmettent de déterminer une dimensions fixe, elle sont aussi utilisées </p>
+      <p>pour appliquer des limites de dimensions. Un bloc ayant des valeurs "auto" peut être complété par des indications de dimensions minimales et maximales. Ces dimensions </p>
+      <p>sont généralement exprimées en px, ou % et ces propietés se déclinent en 6 conditions: width, min-width, max-width,heigt, min-height et max-width.</p>
+
+
+
+      <h2 id="formu">FORMULAIRES</h2>
+      <p>Les formulaires vont nous permettre de recueillir des données envoyées par nos utilisateurs.</p>
+      <p>Il y a une série d'éléments qui vont nous permettre de creer des formulaires</p>
+      <h3> L'ELEMENT FORM </h3>
+      <p> Le élément form nous permet de définir un formulaire. Il y a besoin des 2 attributs: L'attribut <strong>method</strong> et <strong>action</strong>.</p>
+      <p> L'attribut method va indiuer comme doivent être envoyées les données saisies àr l'utilisateur. Cet attribut peut prendre deux valeurs: <strong>get</strong> et <strong>post</strong></p>
+      <ol>
+        <dt>Get</dt >
+        <dd>envoi des données via l'URL nous sommes limités dans la qualité des données. </dd > 
+      </ol>
+      <ol>
+        <dt>Post</dt >
+        <dd>nous ne sommes pas limités dans la quantité des données pouvant être envoyées et les données ne sont pas visibles par personne.</dd > 
+      </ol>
+      <p> L'attribut action va lui nous servir à preciser l'adresse relative de la page dans laquelle les données doivent ètre traités.</p>
+      <h3>LES ELEMENTS INPUT,TEXTAREA ET LABEL</h3>
+      <p> L'élément <strong>input</strong> se présente sous la forme d'une balise orpheline est poséde un attribut type auquel on va pouvoir donner des nombreuses valeurs.Ex: text,mail..etc</p>
+      <p> L'élément <strong>Label</strong> permet de décrire à l'utilisateur ce qu'il doit rentrer dans chaque champ du formulaire.</p>
+      <p> Nous devons lier un label à un élément du formulaire grâce aux attributs <strong>for</strong> et <strong>id</strong>. Il faudra donner strictement la même valeur aux attributs</p>
+      <p> for et id afin de lier entre eux un label et un élément de formulaire</p>
+      <p> L'élément <strong>textarea</strong> va nous permetre de créer un champ de texte multi-lignes, pouvant accuellir par exemple un commentaire.</p>
+      <p><strong>Exemple:</strong>
+      <form   action="" method="post">
+        <label  for="name"> <strong>Nom:</strong> </label>    
+        <input type="text" name="user_name" id="name"/>
+        <label for="commentaire"> <strong>Commentaire:</strong> </label>
+        <textarea type="text" name="user_name" id="commentaire"> </textarea>
+      </form>
+      <h3> L'ATTRIBUT NAME</h3>
+      <p>Nous devons preciser un attribut <strong>name</strong>, pour chaque élément de notre formulaire demandant des informations à l'utilisateur.</p>
+      <p> Cet attribut name va nous permettre par la suite de reconnaître le contexte de chaque donnée envoyée par l'utilisateur afin de pouvoir les traiter efficacement</p>.
+      <h3>STRUCTURE D'UN FORMULAIRE SIMPLE</h3>
+      <pre>
+        &lt; form   action=""
+              method="post"&gt;
+            &lt;label  for="name"> Nom: &lt;/label&gt;    
+            &lt; input type="text" name="user_name" id="name"/&gt;
+            &lt;label for="commentaire"&gt; Commentaire: &lt;/label&gt;
+            &lt;textarea type="text" name="user_name" id="commentaire"> &lt;/textarea &gt;
+          &lt;/form &gt;
+      </pre> 
+      <h3>INPUT TYPE = "TEXT"</h3>
+      <p> La valeur texte va tout simplement nous permettre de crrér un champ de saise mono-ligne dans lequel l'utlisateur entrera des données.</p>
+      <h3>INPUT TYPE = "PASSWORD"</h3>
+      <p> La valeur password va nous permettre de crér un champ de saisie sécurisé pour exemple pour demander un mot de passe à nos utilisateurs.</p>
+      <h3>INPUT TYPE = "DATE"</h3>
+      <p> La valeur date va être utilisée pour créer des champs de formulaire devant recevoir une date, comme une date de naissance.</p>
+      <h3>INPUT TYPE = "MAIL"</h3>
+      <p> La valeur mail de l'attribut type va nous permettre de créer un champ de formulaire devant recevoir, une adresse email.</p>
+      <h3>INPUT TYPE = "RADIO"</h3>
+      <p> La valeur radio va nous permettre de créer des boutons de type radio, c'est à dire de demander à l'utilisateur de choisir une option et seulement</p>
+      <p> dans une liste proposée. Il doit avoir un attribut valeur</p>
+      <p><strong>Exemple:</strong></p>
+      <fieldset>
+         <legend> Un groupe de plus </legend>
+         <input type="radio" id="radio" name="radio"/>
+         <label for="radio"> Destruir todo </label>
+         <input type="radio" id="radio1" name="radio"/>
+         <label for="radio1"> Destruir la religion  </label>
+         <input type="radio" id="radio2" name="radio"/>
+         <label for="radio2"> Destruir los politicos</label>
+      </fieldset>
+      <h3>INPUT TYPE = "CHECKBOX"</h3>
+      <p> Le type checkbox ressemble à la valeur radio, mais l'utilisateur peut ne choisir auncun choix, un choix ou même plusieurs choix.</p>
+        <input type="checkbox" id="chekbox" name="checkbox"/>
+        <label for="checkbox"> Techno </label>
+        <input type="checkbox" id="chekbox" name="checkbox"/>
+        <label for="cbox"> Dubstep </label>
+        <input type="checkbox" id="chekbox" name="checkbox"/>
+        <label for="check"> Drum 'n bass </label>
+      <h3>INPUT TYPE = "SUBMIT"</h3>
+      <p> Un élément input type submit va nous permettre de créer un bouton d'envoi des données du formulaire. Pas besoin d'utiliser un attribut name sinon valeur</p>
+      <h3>LES LISTES D'OPTIONS</h3>
+      <p> Nous avons besoin d'un <strong>select</strong> pour définir notre liste en soi, et des éléments option pour définir chaque élément de notre liste</p>
+      <p> Nous devrons préciser un attribut name pour notre élément select puis des attributs value pour chaque élément option.</p>
+      <p> Nous pouvons grouper érentes options entre elles au sein d'une liste grâce à l'élément <strong>optgroup</strong>. Pour chaque groupe d'options</p>
+      <p> nous préciserons un attribut</p>
+       <select name="selection">
+          <option value="1"> Acid-house </option>
+          <option value="2"> Jungle </option>
+          <option value="3"> Chill out </option>
+        </select>
+      <h3>L'ATTRIBUT HTML MIN ET MAX</h3>
+      <p> Les attributs HTNL min et max vont nous permettre de préciser les valeurs minimales ou maximales attendus pour chaque champ.</p>
+      <h3>L'ATTRIBUT HTML REQUIRED</h3>
+      <p> Cet attribut va nous permettre de rendre un champ de formulaire obligatoire, si l'utlisqteur n'a pas rempli le champ , le formulaire ne pourra pas être envoyé.</p>
+      <h3>L'ELEMENT HTML FIELDSET</h3>
+      <p> L'élément fieldset va nous permettre de regrouper certains éléments d'un formulaire HTML entre eux, afin de crér differents sections pour notre formulaire</p>
+      <p> et de le structurer. Pour donner un nom à chaque section, ous allons utiliser l'élément HTML <strong>legend</strong> à l'intérieur de fieldset</p>
+
+
+
+      <h2 id="ani">ANIMATIONS ET TRANSITION</h2>
+      <p> Les <strong>transitions</strong> vont nous permettre de modifier la valeur d'une propriété CSS de façon fluide, dans le temps, créant ainsi une transition entre les différentes</p>
+      <p>valeurs de notre propriété.</p>
+      <p>Les animations en CSS vont nous permettre de changer le style d’un élément HTML. Contrairement aux transitions, on va pouvoir grâce aux animations modifier le style d’un élément</p>
+      <p>HTML sans changement d’état de celui-ci et autant de fois que voulu.</p>
+      <p>Pour créer une animation en CSS, nous allons utiliser la propriété <strong>animation</strong> ainsi que la règle CSS <strong>@keyframes</strong></p>
+
+
+      
+      <h2 id="pseudo">PSEUDO-CLASSE ET PSEUDO-ELEMENTS</h2>
+      <p> Les pseudo classes vont nous permettre de changer le style d’un élément HTML selon son état, c’est-à-dire de façon quasi dynamique. Par exemple, nous allons pouvoir afficher un</p>
+      <p>paragraphe en gras lorsque l’utilisateur passe sa souris dessus ou changer la couleur d’un lien une fois celui-ci cliqué. Les pseudo classes sont reconnaissables au fait qu’elles</p>
+      <p>commencent tous par le symbole :  </p>
+      <p>Les pseudo éléments CSS vont nous permettre de modifier l’apparence d’une partie seulement d’un ou de plusieurs éléments HTML, ou encore d’ajouter du contenu au début ou à la fin</p>
+      <p>d'un certain élément HTML. Les pseudo éléments sont reconnaissables en CSS à leur écriture tous commencent par :: </p>

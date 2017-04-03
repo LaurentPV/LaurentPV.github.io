@@ -43,7 +43,7 @@ text-decoration: none;
   min-height: 30em;
   text-align: justify;
   line-height: 1.5;
-  padding: 100px 200px 100px 300px;
+  padding: 100px 200px 100px 200px;
 }
 
 footer{
@@ -66,24 +66,24 @@ body{
 }
 
 #bando{
-background: #B8C1C8;
+  background: #B8C1C8;
   border-bottom: 1px solid #989EA4;
   border-top: 1px solid #717D85;
   width: 100%;
 }
 
-     #menu{
-        display: flex;
-     	flex-direction: column;
-     	align-self: flex-start;
-        position: fixed;
-     	top: 5.1em;
-     	left: 0em;
-	width:150px;
-	margin:20px auto 0 auto;
+#menu{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  position: fixed;
+  top: 5.1em;
+  left: 0em;
+  width:150px;
+  margin:20px auto 0 auto;
 }
 .menu, .sousmenu{
-	text-align:center;
+  text-align:center;
 }
 .menu{
 	left: 0;
@@ -130,6 +130,10 @@ background: #B8C1C8;
  a {
 color: #4169E1;
 }
+table{
+	width: 100%;
+}
 td{
-	min-width: 250px;
+	text-align: left;
+	min-width: 20em;
 }

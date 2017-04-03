@@ -6,94 +6,95 @@
    <link rel="stylesheet" type="text/css" href="reset.css"/>
    <link rel="stylesheet" type="text/css" href="style.css"/>
    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+   <link rel="shortcut icon" href="licorne.ico">
    <script type="text/javascript" src="functions.js"></script>
   </head>
   <body>
-  <div class="fix">
-    <header>
-      <div id="titre">
-        <h1><a href="#mots" >Initiation aux languages HTML 5 &amp; CSS 3</a></h1>
-      </div>
-            <img id="logo" src="logo.png" alt="tristesse"> 
-    </header>
-<div id="bando">
-</div>
+    <div class="fix">
+      <header>
+        <div id="titre">
+          <h1><a href="#mots" >Initiation aux languages HTML 5 &amp; CSS 3</a></h1>
+        </div>
+        <img id="logo" src="logo.png" alt="tristesse"> 
+      </header>
+      <div id="bando">
+    </div>
 
     <div id="menu">
-  <div class="menu" id="menu1" onclick="afficheMenu(this)">
-    <a href="#">HTML</a>
-  </div>
-  <div id="sousmenu1" style="display:none">
-    <div class="sousmenu">
-      <a href="#">Introduction</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#base">Base du Document Html</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#balises">Les Balises</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#struct">La Structure d'une Page</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">Les Liens Hypertextes</a>
-    </div>
-  </div>
+      <div class="menu" id="menu1" onclick="afficheMenu(this)">
+        <a href="#">HTML</a>
+      </div>
+        <div id="sousmenu1" style="display:none">
+          <div class="sousmenu">
+            <a href="#">Introduction</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#base">Base du Document Html</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#balises">Les Balises</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#struct">La Structure d'une Page</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#link">Les Liens Hypertextes</a>
+          </div>
+        </div>
   
-  <div class="menu" id="menu2" onclick="afficheMenu(this)">
-    <a href="#">CSS</a>
-  </div>
-  <div id="sousmenu2" style="display:none">
-    <div class="sousmenu">
-      <a href="#">Les Boites</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">Les Classes</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">La Position</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">Flexbox</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">Les Pseudo-Classes</a>
-    </div>
-    <div class="sousmenu">
-      <a href="#">Les Formulaires</a>
-    </div>
-  </div>
+      <div class="menu" id="menu2" onclick="afficheMenu(this)">
+        <a href="#css">CSS</a>
+      </div>
+        <div id="sousmenu2" style="display:none">
+          <div class="sousmenu">
+            <a href="#css">Les Boites</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#classe">Les Classes</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#position">La Position</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#flexbox">Flexbox et Inspection</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#pseudo">Les Pseudo-Classes</a>
+          </div>
+          <div class="sousmenu">
+            <a href="#form">Les Formulaires</a>
+          </div>
+        </div>
 
-  <div class="menu" id="menu4" onclick="afficheMenu(this)">
-    <a href="#">RESSOURCES</a>
-  </div>
-  <div id="sousmenu4" style="display:none">
-    <div class="sousmenu">
-      <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">MDN-HTML</a>
+      <div class="menu" id="menu3" onclick="afficheMenu(this)">
+        <a href="#">RESSOURCES</a>
+      </div>
+        <div id="sousmenu3" style="display:none">
+          <div class="sousmenu">
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">MDN-HTML</a>
+          </div>
+          <div class="sousmenu">
+            <a href="https://developer.mozilla.org/fr/Apprendre/Commencer_avec_le_web/Les_bases_CSS" target="_blank">MDN-CSS</a>
+          </div>
+          <div class="sousmenu">
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Flexbox</a>
+          </div>
+          <div class="sousmenu">
+            <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/comment-fait-on-pour-creer-des-sites-web" target="_blank">Open-Classroom</a>
+          </div>
+          <div class="sousmenu">
+            <a href="https://validator.w3.org/" target="_blank">Validator</a>
+          </div>
+          <div class="sousmenu">
+            <a href="https://cocoware.github.io/" target="_blank">Cocoware</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="sousmenu">
-      <a href="https://developer.mozilla.org/fr/Apprendre/Commencer_avec_le_web/Les_bases_CSS" target="_blank">MDN-CSS</a>
-    </div>
-    <div class="sousmenu">
-      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Flexbox</a>
-    </div>
-    <div class="sousmenu">
-      <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/comment-fait-on-pour-creer-des-sites-web" target="_blank">Open-Classroom</a>
-    </div>
-    <div class="sousmenu">
-      <a href="https://validator.w3.org/" target="_blank">Validator</a>
-    </div>
-     <div class="sousmenu">
-      <a href="https://cocoware.github.io/" target="_blank">Cocoware</a>
-    </div>
-  </div>
-</div>
-</div>
 
-      <section class="corps">
-        <div class="blabla" id="mots">
-          <p>INTRODUCTION</br></br>
+    <section class="corps">
+      <div class="blabla" id="mots">
+        <p>INTRODUCTION</br></br>
               HTML (Hypertext Markup Language) est un language crée en 1991 et fonctionnant sur un système de balisage afin de coder la structure et le contenu d'une page web. CSS (Cascading Style Sheets) est un language complémentaire fonctionnant sur un système de "feuilles de style" et permettant une gestion dissociée de l'affichage de la page web. L'association de HTML et de CSS permet une grande maniabilité dans le domaine du développement web
               en permettant la modification du contenu sans affecter l'affichage et vice versa.</p></br>
                
@@ -153,7 +154,7 @@
                 <table>
                   <tr>
                     <td>&lt;meta charset="utf-8" /&gt; :</td>
-                    <td>L'encodage. Cette balise &lt;meta pour metadonnées spécifie entre autres choses l'encodage (ou charset) des caractères utilisé dans notre fichier HTML.
+                    <td>L'encodage. Cette balise &lt;meta&gt; (pour metadonnées) spécifie entre autres choses l'encodage (ou charset) des caractères utilisé dans notre fichier HTML.
                     Cet encodage spécifie à l'ordinateur à quoi fait spécifiquement référence
                         chaque caractère tapé par l'utilisateur. Une page Web doit pouvoir potentiellement
                         afficher tous les caractères typographiques existant et l'encodage permet cela.
@@ -277,14 +278,14 @@
               <div id="bando"></div>
                    </br></br>
 
-              <section id="tab"><p>Les Tableaux</p></section>
+              <section id="tab"><p>Les Tableaux</p></br></section>
                 <ul>
-                  <li>L'information concernant l'organisation d'un tableau en HTML se trouve entre les balises &lttable&gt et &lt/table&gt.</li>
-                  <li>Chaque cellule (=case) du tableau est identifié par les balises &lttd&gt et &lt/td&gt. L'information à placer au sein de la cellule se
-                    trouvera au sein du code entre ces balises.</li>
-                  <li>Chaque ligne du tableau est de la même façon illustrée par les balises &lttr&gt et &lt/tr&gt.</li>
-                  <li>Un tableau peut comporter une en-tête et un footer dont les balises seront &ltthead&gt et &ltfooter&gt. Chaque élément au sein de ces balises
-                     sera placé entre les sous-balises &ltth&gt et &lt/th&gt.</li>
+                  <p>L'information concernant l'organisation d'un tableau en HTML se trouve entre les balises &lt;table&gt; et &lt;/table&gt;.</p>
+                  <p>Chaque cellule (=case) du tableau est identifié par les balises &lt;td&gt; et &lt;/td&gt;. L'information à placer au sein de la cellule se
+                    trouvera au sein du code entre ces balises.</p>
+                  <p>Chaque ligne du tableau est de la même façon illustrée par les balises &lt;tr&gt; et &lt;/tr&gt;.</p>
+                  <p>Un tableau peut comporter une en-tête et un footer dont les balises seront &lt;thead&gt; et &lt;footer&gt;. Chaque élément au sein de ces balises
+                     sera placé entre les sous-balises &lt;th&gt; et &lt;/th&gt;.</p>
                   <p>Exemple de code pour un tableau présentant les caractères "A" et "B" sur la première ligne et "B" et "C" sur la seconde avec header et Footer :</p>
                   <pre id="code">
           <code>
@@ -307,7 +308,7 @@
                        &lt;/table&gt;</code></pre></br>
 
                   <p>La balise &lt;caption&gt; se place juste après &lt;table&gt; et permet d'insérer une légende au tableau.</p>
-                  <p>La balise &lt;colgroup&gt; se place après &lt;caption&gt; lorsqu'il est présent, sinon après &lttable&gt et sert à définir les colonnes du tableau.</p>
+                  <p>La balise &lt;colgroup&gt; se place après &lt;caption&gt; lorsqu'il est présent, sinon après &lt;table&gt; et sert à définir les colonnes du tableau.</p>
                   <p>ROSPAN et COLSPAN permettent de faire fusionner plusieurs cases; dans le sens des lignes (ROws) ou des colonnes (COlumns). ex: &lt;td rospan="2"&gt; afin de faire fusionner deux cellules d'une ligne.</p>
 
           <div id="struct"></br></br></br></br></br>
@@ -315,8 +316,8 @@
             <p>Ces balises servent à délimiter des "cadres" au sein de notre page WEB afin de mieux organiser celle ci et son contenu. Grace à ces balises
             nous pourrons modifier certaines parties de la page sans affecter le reste. Avec l'utilisation de CSS, l'existence de ces balises prendra toute sa valeur.</p></br>
 
-            <center></center><img src="https://laurentpv.github.io/structure.png" alt="tristesse"></center>
-            <p>Illustration des différentes zones définies par les balises structurantes.</p>
+            <center><img src="https://laurentpv.github.io/structure.png" alt="tristesse"></center>
+            <center><p>Illustration des différentes zones définies par les balises structurantes.</p></center>
 
             <div id=""><p>Les Balises</p></div></br>
             <div id="bando"></div>
@@ -358,7 +359,7 @@
             <div id="link"></br></br></br></br></br>
             <p>LES LIENS HYPERTEXTES</p></br>
                      <p>Ces liens sont au coeur du fonctionnement du language HTML dans l'édition de documents à lecture non linéaire.</p></br>
-                     <div id=""><p>Comment insérer des liens HTML</p></div></br>
+                     <div id=""><p>Comment insérer des liens HTML :</p></div></br>
             <div id="bando"></div>
                   <table>
                     <tr>
@@ -392,48 +393,223 @@
                    </br>
             
 
-              <section id="tar"><p>L'Attribut TARGET</p></section>
-              <p>L'attribut TARGET permet en lieu et place de HREF de moduler l'affichage du lien hypertexte.
-
+              <section id="tar"><p>L'Attribut TARGET</p></br></section>
+              <p>L'attribut TARGET permet en lieu et place de HREF de moduler l'affichage du lien hypertexte.</p>
+              <div id="bando"></div>
               <table>
-                <thead>
-                  <th></th>
-                </thead>
-                <tfoot>
-                  <th></th>
-                </tfoot>
-                <tr>
-                    <td><strong>Syntaxe</strong></td>
-                    <td><strong>Description</strong></td>
-                </tr>
-                <tr>
+                  <tr>
+                    <td><strong>Syntaxe :</strong></td>
+                    <td><strong>Description :</strong></td>
+                  <tr>
+              </table>
+              <div id="bando"></div>
+              <table>
+                  <tr>
                     <td>target="_blank" : </td>
                     <td>Affiche le lien dans une autre fenêtre du navigateur.</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>target="_top" : </td>
                     <td>Affiche le lien dans la totalité de la fenêtre courante.</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>target="_parent" : </td>
                     <td>Affichage dans le cadre de la structure courante.</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>target="_self" : </td>
                     <td>Affichage par défaut, dans le cadre courant.</td>
-                </tr>
-                <tr>
+                  </tr>
+                  <tr>
                     <td>target="_<em>nomducadre<em>" : </td>
                     <td>Affichage dans un cadre spécifié.</td>
-                </tr>
+                  </tr>
               </table>
+              <div id="bando"></div>
 
-              <section id="echap"><li>L'échappement</li></section>
-
-                    <ul><li> "<" s'écrit lorsqu'il s'agit de texte :&amplt (lt pour Lesser Than)</li>
-                    <li>">" s'écrit lorsqu'il s'agit de texte : &ampgt (gt pour Greater Than)</li>
-                    <li>"&amp" s'écrit : &ampamp</li>
-                    <li>Commentaire au sein du code : &lt!--texteducommentaire--&gt</li></ul>
+              <div id="css"></br></br></br></br></br>
+                <p>LE LANGUAGE CSS</p></br></br>
+                  <p></p></br></br>
+              </div>
+              <p>Le language CSS pour Cascading Style Sheet permet la description du style visuel d'une page HTML. Ce code est écrit dans un fichier .css qui décrit précisément la disposition des éléments de la page HTML, permettant un affichage spécifique au sein du navigateur web.</p></br>
+              <div><p>Les Boites</p></br>
+              <p>Le language CSS fonctionne sur un système de boites. En HTML, le flux d'information s'affiche sur la page web linéairement de haut en bas (en faisant abstraction non négligeable des liens hypertextes). Ces boites vont nous permettre de regrouper certaines informations ou zones de notre information HTML afin de gérer différentiellement leur aspect visuel, ordre d'affichage, interactions avec l'utilisateur...</p>
+              <center><img src="https://laurentpv.github.io/cssbox.png" alt="tristesse"></center>
+              <center><p>La fameuse "boite" et ses paramètres !</p></center></br>
+              <p>Ces boites sont à définir au sein du code HTML via les balises &lt;div&gt; et &lt;span&gt;. La balise &lt;div&gt; isole une boite (ou container) de type BLOCK du flux d'information. Cette balise est propice à une personnalisation spécifique d'un groupe d'information isolées (un menu par exemple...).</p><p>La balise &lt;span&gt; caractérise une boite de type IN-LINE. Elle concerne donc une information placée dans le flux que l'on pourra parametrer sans interrompre celui-ci.</p></br>
+              <div id="bando"></div>
+              <p>Exemple de code HTML contenant 3 boites "div" différentes : </p>
+              <pre id="code">
+                <code>
+                       &lt;html&gt;
+                         &lt;body&gt;
+                           &lt;div&gt;
+                           &lt;p&gt;boite_de_texte&lt;/p&gt;
+                           &lt;/div&gt;
+                           &lt;div id="boite1"&gt;
+                             ......informations contenues dans la boite 1..........
+                           &lt;/div&gt;
+                        &lt;div class="boite2"&gt;
+                        ......informations contenues dans la boite 2..........
+                           &lt;/div&gt;
+                       &lt;/body&gt;
+                       &lt;/html&gt;
+                </code></pre></br>
+              <div id="bando"></div>
+              <p>References à ces boites dans le fichier CSS :</p>
+              <pre id="code">
+                <code>
+                #boite1{ 
+                  display: flex;
+                  flex-direction: column;
+                  align-self: flex-start;
+                  position: fixed;
+                  top: 5.1em;
+                  left: 0em;
+                  width:150px;
+                  margin:20px auto 0 auto;
+                  }
+                .boite2{
+                  height:18px;
+                  width:150px;
+                  padding:1px 0;
+                  background:#808080;
+                  color:#fff;
+                  }
+                  </code></pre></br>
+                  <div id="bando"></div>
+                  <p>Le fichier CSS contient donc une énumération de référence aux fichier HTML, réferences contenant entre accolades des paramètres définissant l'affichage de la boite dont il est question.</p>
+                  <p>Ici nous illustrons 2 manière de caractériser spécifiquement une ou plusieurs boites. Soit affecter un ID à une boite et y faire référence avec "#" au sein du fichier CSS. ATTENTION l'ID ne doit pas être redondant au sein du code. La seconde option est d'affecter une classe à laquelle il est fait référence au sein du fichier CSS avec la syntaxe : .classe{}</p>
+              <div id="classe"></br></br></br></br></br><p>Les Classes</p></br>
+              <p>Contrairement à l'attribut ID, l'attribut class permet d'attribuer plusieurs classes à un élément.</p>
+              <div id="bando"></div>
+              <p>Exemple : </p>
+              <pre id="code">
+                <code>
+                      Au sein du code HTML :
+                        &lt;div class="carre rouge"&gt;
+                      Au sein du fichier .css : 
+                        .carre{
+                        height: 150px;
+                        width: 150px;
+                        }
+                        .rouge{
+                        background: red;
+                        }
+                </code></pre></br>
+                <div id="bando"></div>
+                <div id="position"></br></br></br></br></br><p>La Position</p></br>
+                 <p>L'avantage d'avoir recours au système des boites est de pouvoir agencer entre eux de manière très précise les éléments de notre site web.</p><p>Les différents paramètres de position sont :</p>
+                 <p> <strong>Position:static</strong>: positionnement par défaut de l'élément au sein du flux.</p>
+                 <p><strong>Position:fixed</strong>: l'élément gardera son emplacement dans la fenêtre du navigateur quel que soit son défilement.</p>
+                 <p><strong>Position:relative</strong>: positionne l'élément de manière relative au positionnement d'un autre élément.</p>
+                <p><strong>Position:absolute</strong>: identique au positionnement fixe mais l'élément reste à sa position et ne sera plus visible avec le défilement du flux.</p>
+                <div id="flexbox"></br></br></br></br></br><p>La Flexbox</p></br>
+                <p>Le paramètre display: flex; permet d'agencer les éléments "fils" d'une boite de manière extrêmement souple et adaptable.</p><p>Pour plus d'informations concernant la Flexbox n'hésitez pas à consulter <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">cette page</a> très complète sur le sujet.</p>
+                <div id="pseudo"></br></br></br></br></br><p>Les Pseudo-Classes</p></br>
+                <p>Les pseudo-classes sont des paramètres soumis à condition et concernant une classe ou un ID (classes et IDs sont considérés comme des sélecteurs) préalablement déclarés.</p><p>La syntaxe prend la forme suivante : </p>
+                <pre id="code">
+                <code>
+                      selecteur:pseudo-classe {
+                      propriété: valeur;
+                      }
+                      exemple....
+                      .survol:hover {
+                      background-color: palegreen;
+                      }
+                </code></pre></br>
+                <p>Ici la pseudo classe "hover" nous permet d'afficher le fond du texte de la boite "survol" en vert pale lorsqu'on passe dessus avec la souris.</p>
+                <div id="form"></br></br></br></br></br><p>Les Formulaires</p></br>
+                <p>Les formulaires vont nous permettre de recueillir des données saisies par l'utilisateur.</p>
+                <p>Plusieurs éléments sont nécessaires à la création d'un formulaire.</p>
+                
+                <p> L'ELEMENT FORM nous permet de définir un formulaire. Il a besoin pour se faire de 2 attributs: <strong>method</strong> et <strong>action</strong>.</p>
+                 <p> L'attribut method va indiquer comment doivent être envoyées les données saisies par l'utilisateur. Cet attribut peut prendre deux valeurs: <strong>get</strong> et <strong>post</strong></p>
+                  <p>"Get" envoie des données via l'URL. La qualité de ces données recueillies est limitée.</dd>
+            <p>"Post"ne nous limite pas dans la quantité de données pouvant être envoyées et les données ne sont pas visibles par personne.</dd > 
+          <p> L'attribut "action" va lui nous servir à preciser l'adresse relative de la page dans laquelle les données doivent être traitées.</p></br>
+          <p>LES ELEMENTS INPUT,TEXTAREA ET LABEL : </p>
+          <p> L'élément <strong>input</strong> se présente sous la forme d'une balise orpheline et possède un attribut type auquel on va pouvoir donner de nombreuses valeurs.Ex: text,mail..etc</p>
+          <p> L'élément <strong>Label</strong> permet de décrire à l'utilisateur ce qu'il doit rentrer dans chaque champ du formulaire.</p>
+          <p> Nous devons lier un label à un élément du formulaire grâce aux attributs <strong>for</strong> et <strong>id</strong>. Il faudra donner strictement la même valeur aux attributs</p>
+          <p> for et id afin de lier entre eux un label et un élément de formulaire</p>
+          <p> L'élément <strong>textarea</strong> va nous permetre de créer un champ de texte multi-lignes, pouvant accuellir par exemple un commentaire.</p></br>
+          <div id="bando"></div>
+          <p><strong>Exemple:</strong>
+          <form   action="" method="post">
+            <label  for="name"> <strong>Nom:</strong> </label>    
+            <input type="text" name="user_name" id="name"/>
+            <label for="commentaire"> <strong>Commentaire:</strong> </label>
+            <textarea type="text" name="user_name" id="commentaire"> </textarea>
+          </form>
+          <div id="bando"></div>
+          <p>Nous devons preciser un attribut <strong>name</strong>, pour chaque élément de notre formulaire demandant des informations à l'utilisateur.</p>
+          <p> Cet attribut name va nous permettre par la suite de reconnaître le contexte de chaque donnée envoyée par l'utilisateur afin de pouvoir les traiter efficacement.</p></br>
+          <div id="bando"></div>
+          <p>STRUCTURE D'UN FORMULAIRE SIMPLE</p>
+          <pre><code>
+            &lt; form   action=""
+                  method="post"&gt;
+                &lt;label  for="name"> Nom: &lt;/label&gt;    
+                &lt; input type="text" name="user_name" id="name"/&gt;
+                &lt;label for="commentaire"&gt; Commentaire: &lt;/label&gt;
+                &lt;textarea type="text" name="user_name" id="commentaire"> &lt;/textarea &gt;
+              &lt;/form &gt;
+              </code>
+          </pre>
+          <div id="bando"></div>
+          <p>INPUT TYPE = "TEXT"</p>
+          <p> La valeur texte va tout simplement nous permettre de crrér un champ de saise mono-ligne dans lequel l'utlisateur entrera des données.</p></br>
+          <p>INPUT TYPE = "PASSWORD"</p>
+          <p> La valeur password va nous permettre de crér un champ de saisie sécurisé pour exemple pour demander un mot de passe à nos utilisateurs.</p></br>
+          <p>INPUT TYPE = "DATE"</p>
+          <p> La valeur date va être utilisée pour créer des champs de formulaire devant recevoir une date, comme une date de naissance.</p></br>
+          <p>INPUT TYPE = "MAIL"</p>
+          <p> La valeur mail de l'attribut type va nous permettre de créer un champ de formulaire devant recevoir, une adresse email.</p></br>
+          <p>INPUT TYPE = "RADIO"</p>
+          <p> La valeur radio va nous permettre de créer des boutons de type radio, c'est à dire de demander à l'utilisateur de choisir une option et seulement</p>
+          <p> dans une liste proposée. Il doit avoir un attribut valeur</p></br>
+          <div id="bando"></div>
+          <p><strong>Exemple:</strong></p>
+          <fieldset>
+             <legend> Choisir :</legend>
+             <input type="radio" id="radio" name="radio"/>
+             <label for="radio"> Le Pain Perdu </label>
+             <input type="radio" id="radio1" name="radio"/>
+             <label for="radio1"> Le Paris-Brest  </label>
+             <input type="radio" id="radio2" name="radio"/>
+             <label for="radio2"> La Banane</label>
+          </fieldset>
+          <div id="bando"></div></br>
+          <p>INPUT TYPE = "CHECKBOX"</p>
+          <p> Le type checkbox ressemble à la valeur radio, mais l'utilisateur peut ne choisir aucun choix, un choix ou même plusieurs choix.</p>
+            <input type="checkbox" id="chekbox" name="checkbox"/>
+            <label for="checkbox"> Salade </label>
+            <input type="checkbox" id="chekbox" name="checkbox"/>
+            <label for="cbox"> Tomate </label>
+            <input type="checkbox" id="chekbox" name="checkbox"/>
+            <label for="check"> Oignon </label>
+            <div id="bando"></div></br>
+          <p>INPUT TYPE = "SUBMIT"</p>
+          <p> Un élément input type submit va nous permettre de créer un bouton d'envoi des données du formulaire. Pas besoin d'utiliser un attribut name sinon valeur</p></br>
+          <p>LES LISTES D'OPTIONS</p>
+          <p> Nous avons besoin d'un <strong>select</strong> pour définir notre liste en soi, et des éléments option pour définir chaque élément de notre liste</p>
+          <p> Nous devrons préciser un attribut name pour notre élément select puis des attributs value pour chaque élément option.</p>
+          <p> Nous pouvons grouper érentes options entre elles au sein d'une liste grâce à l'élément <strong>optgroup</strong>. Pour chaque groupe d'options</p>
+          <p> nous préciserons un attribut</p>
+          <div id="bando"></div>
+           <select name="selection">
+              <option value="1"> Célibataire </option>
+              <option value="2"> Marié(e) </option>
+              <option value="3"> Pacsé(e) </option>
+            </select>
+            <div id="bando"></div></br>
+          <p>L'ATTRIBUT HTML MIN ET MAX</p>
+          <p> Les attributs HTNL min et max vont nous permettre de préciser les valeurs minimales ou maximales attendus pour chaque champ.</p></br>
+          <p>L'ATTRIBUT HTML REQUIRED</p>
+          <p> Cet attribut va nous permettre de rendre un champ de formulaire obligatoire, si l'utlisqteur n'a pas rempli le champ , le formulaire ne pourra pas être envoyé.</p></br>
+          <p>L'ELEMENT HTML FIELDSET</p>
+          <p> L'élément fieldset va nous permettre de regrouper certains éléments d'un formulaire HTML entre eux, afin de créer differentes sections pour notre formulaire et ainsi le structurer. Pour donner un nom à chaque section, nous allons utiliser l'élément HTML <strong>legend</strong> au sein de fieldset.</p>
 
        </div>
        </section>
